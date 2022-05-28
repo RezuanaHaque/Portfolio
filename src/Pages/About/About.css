@@ -1,0 +1,223 @@
+body{
+    background-color: whitesmoke;
+}
+.bg{
+    background-image: image('../../img/bg.jpg');
+}
+.mt{
+    margin-top: 10%;
+    margin-right: 10%;
+}
+
+.polaroid {
+  display: inline-block;
+  /* margin: 10px; */
+  position: relative;
+  width: auto;
+    /* margin-left: 110%; */
+}
+/* .polaroid .img1{
+    margin-left: 30%;
+} */
+.polaroid img {
+  border: 12px solid #fff;
+  border-bottom: 70px solid #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  max-width: 100%;
+  /* -ms-transform: rotate(20deg); IE 9 */
+  /* transform: rotate(365deg); */
+}
+hr.style {
+	background-color: #fff;
+	border-top: 3.5px dashed #000000;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.col2{
+    margin-left: 160px;
+    margin-top: 160px;
+}
+
+.button {
+	float: left;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button span {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 60px;
+	margin-left: 10px;
+}
+
+.button:hover {
+	width: 200px;
+}
+
+.button:nth-child(1):hover .icon {
+	background: #e1306c;
+}
+
+.button:nth-child(2):hover .icon {
+	background: #4267b2;
+}
+
+.button:nth-child(3):hover .icon {
+	background: #1da1f2;
+}
+
+.button:nth-child(4):hover .icon {
+	background: #0e76a8;
+}
+
+.button:nth-child(5):hover .icon {
+	background: #ff0000;
+}
+
+.button:nth-child(6):hover .icon {
+	background: #333;
+}
+
+.button:nth-child(1) span {
+	color: #e1306c;
+}
+
+.button:nth-child(2) span {
+	color: #4267b2;
+}
+
+.button:nth-child(3) span {
+	color: #1da1f2;
+}
+
+.button:nth-child(4) span {
+	color: #0e76a8;
+}
+
+.button:nth-child(5) span {
+	color: #ff0000;
+}
+
+.button:nth-child(6) span {
+	color: #333;
+}
+
+.button .icon {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	border-radius: 50px;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+}
+
+.button .icon i {
+	font-size: 25px;
+	line-height: 60px;
+	transition: all 0.3s ease-in-out;
+}
+
+.button:hover i {
+	color: #fff;
+}
+/* fade in left  */
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+.in-left {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-duration:1s;
+    animation-delay: 1s;
+}
+@media only screen and (max-width:688px) {
+        .polaroid img{
+            width: 163px;
+            height: 238px;
+            border: 8px solid #fff;
+            border-bottom: 30px solid #fff;
+            -ms-transform: rotate(0deg); /* IE 9 */
+            transform: rotate(0deg);
+            margin-left: 50%;
+        }
+        .col2{
+            margin: 0;
+            }
+        .polaroid .img1{
+            align-items: center;
+            }
+
+}
